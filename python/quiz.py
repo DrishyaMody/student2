@@ -1,46 +1,37 @@
+#Function definition(prompt, answer): this function asks question and checks useranswer is correct and returns a point if answer is correct
+def question (prompt, answer):
+    point=0
+    useranswer=input(prompt)
+    print(f'{useranswer}')
+    if useranswer.casefold() == answer.casefold():
+        print ('Great Job! Thats Correct time for the next question!')
+        point= point + 1
+    else:
+        print('Sorry that is incorrect.')
+    return point
+
 #Asking name before quiz
 name=input("What is your name?")
 print(f'Hi {name}! Are you ready for the quiz!')
 score=0
 
 
+
 #Question 1 sequence
-question1=input('How many planets are in the solar system')
-print(f'{question1}')
-if question1 == '8':
-    print('Great Job! Ready for the next question?')
-    score= score +1
-else:
-     print ('Sorry that is incorrect')
-     
+score=score+question('How many planets are in the solar system?', '8')
 
-
-#Question 2 Sequence
-question2=input('What sport does Lionel Messi play?')
-print(f'{question2}')
-if question2== 'soccer':
-    print('Great Job! Ready for the last question?')
-    score=score+1
-elif question2== 'Soccer':
-    print('Great Job! Ready for the last question?')
-    score=score+1
-else: 
-     print ('Sorry that is incorrect')
-
+#Question 2 sequence
+score=score+question('What sport does Lionel Messi play?', 'soccer')
 
 #Question 3 sequence
-question3=input('How many continents are there?')
-if question3=='7':
-    print('Great Job! Ready for your score?')
-    score=score+1
-else:
-    print ('Sorry that is incorrect')
+score=score+question('How many continents are there?','7')
+     
 
 
 #Score/percentage calculation
 percentage = (score/3)*100
 
-print (f'Your score is {percentage}%')
+print (f'Your score is {percentage:.2f}%')
 
 
 
