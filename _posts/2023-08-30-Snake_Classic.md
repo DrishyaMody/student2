@@ -3,7 +3,6 @@ toc: true
 comments: true
 layout: post
 title: Snake
-description: Become one with your tools.  They could be more important than code, code, code.
 type: hacks
 courses: { compsci: {week: 0} }
 categories: [C1.4]
