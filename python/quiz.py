@@ -1,3 +1,4 @@
+
 #Function definition(prompt, answer): this function asks question and checks useranswer is correct and returns a point if answer is correct
 def question (prompt, answer):
     point=0
