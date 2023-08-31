@@ -1,6 +1,4 @@
 ---
-toc: true
-comments: true
 layout: post
 title: Snake
 type: hacks
