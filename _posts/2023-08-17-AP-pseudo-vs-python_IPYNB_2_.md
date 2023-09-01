@@ -5,7 +5,7 @@ layout: post
 title: College Board Pseudo Code
 description: The College Board testing language is Pseudo Code.  Pseudo mean kind-of language that we will compare to Python.
 courses: {'csp': {'week': 0}}
-type: hacks
+type: 
 ---
 
 ## Learning College Board Pseudo Code

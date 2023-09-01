@@ -1,9 +1,11 @@
 ---
+toc: true
+comments: false
 layout: post
 title: Snake
 type: hacks
-courses: { compsci: {week: 0} }
-categories: [C1.4]
+courses: { csp: {week: 1} }
+permalink: /snake-classic
 ---
 
 <style>
