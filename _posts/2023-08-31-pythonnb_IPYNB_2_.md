@@ -29,7 +29,7 @@ print(f'Hi {name}! Are you ready for the quiz!')
 score=0
 ```
 
-    What is your name?sDrishya
+    What is your name?Drishya
     Hi Drishya! Are you ready for the quiz!
 
 

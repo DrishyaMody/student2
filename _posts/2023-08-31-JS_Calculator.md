@@ -2,7 +2,7 @@
 layout: post
 title: JS Calculator
 type: hacks
-courses: { csp: {week: 1} }
+courses: { csp: {week: 2} }
 permalink: /Js-Calculator
 ---
 

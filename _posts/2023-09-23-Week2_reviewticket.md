@@ -11,6 +11,7 @@ type: tangibles
 - Created Lab Notebook
 - Added JavaScript calculator to blog
 - Completed JS output with Jquery
+- Completed JS calculator
 
 
 
