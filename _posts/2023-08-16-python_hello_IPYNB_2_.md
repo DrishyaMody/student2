@@ -2,7 +2,7 @@
 layout: post
 title: Python IO
 description: These examples show the basic language structures and constructs of Python using input and output (print) commands.
-courses: {'csp': {'week': 1, 'categories': ['1.A', '3.A', '4.B']}}
+courses: {"csp": {"week": 1,}}
 categories: ['C4.0']
 type: ccc
 ---

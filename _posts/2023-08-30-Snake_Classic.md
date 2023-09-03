@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Snake
 type: hacks
-courses: { csp: {week: 1} }
+courses: { "csp": {"week": 1} }
 permalink: /snake-classic
 ---
 

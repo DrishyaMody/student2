@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: Review Ticket
-courses: {csp: {week: 2} }
+courses: {"csp": {"week": 2} }
 type: tangibles
 ---
 

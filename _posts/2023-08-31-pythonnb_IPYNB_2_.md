@@ -2,7 +2,7 @@
 layout: post
 title: Python Hack
 type: hacks
-courses: {'csp': {'week': 1}}
+courses: {"csp": {"week": 1}}
 permalink: /python-hack
 ---
 

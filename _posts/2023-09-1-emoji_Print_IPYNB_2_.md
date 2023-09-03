@@ -3,7 +3,7 @@ layout: post
 title: Emoji Print
 type: hacks
 description: emojis
-courses: {'csp': {'week': 2}}
+courses: {"csp": {"week": 2}}
 permalink: /emoji-print
 ---
 

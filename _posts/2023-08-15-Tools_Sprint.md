@@ -5,7 +5,7 @@ layout: post
 title: Tools Setup
 description: VScode setup, github setup
 type: 
-courses: {csp: {week: 0,} }
+courses: {"csp": {"week": 0,} }
 categories: [C1.4]
 ---
 
