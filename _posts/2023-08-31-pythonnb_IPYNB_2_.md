@@ -1,9 +1,9 @@
 ---
 layout: post
-title: JS Calculator
+title: Python Hack
 type: hacks
-courses: {'compsci': {'week': 0}}
-categories: ['C1.4']
+courses: {'csp': {'week': 1}}
+permalink: /python-hack
 ---
 
 ```python
@@ -29,8 +29,8 @@ print(f'Hi {name}! Are you ready for the quiz!')
 score=0
 ```
 
-    What is your name?sss
-    Hi sss! Are you ready for the quiz!
+    What is your name?sDrishya
+    Hi Drishya! Are you ready for the quiz!
 
 
 
@@ -48,9 +48,9 @@ score=score+question('How many continents are there?','7')
     How many planets are in the solar system?8
     8
     Great Job! Thats Correct time for the next question!
-    What sport does Lionel Messi play?soco
-    soco
-    Sorry that is incorrect.
+    What sport does Lionel Messi play?soccer
+    soccer
+    Great Job! Thats Correct time for the next question!
     How many continents are there?7
     7
     Great Job! Thats Correct time for the next question!
@@ -64,7 +64,7 @@ percentage = (score/3)*100
 print (f'Your score is {percentage:.2f}%')
 ```
 
-    Your score is 66.67%
+    Your score is 100.00%
 
 
 
