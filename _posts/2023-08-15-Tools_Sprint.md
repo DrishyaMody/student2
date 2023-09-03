@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Tools Setup
 description: VScode setup, github setup
-type: plans
+type: 
 courses: {csp: {week: 0,} }
 categories: [C1.4]
 ---

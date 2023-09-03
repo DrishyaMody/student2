@@ -6,6 +6,9 @@ courses: { csp: {week: 1} }
 permalink: /Js-Calculator
 ---
 
+
+
+
 <!-- 
 Hack 0: Right justify result
 Hack 1: Test conditions on small, big, and decimal numbers, report on findings. Fix issues.
