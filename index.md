@@ -8,10 +8,8 @@ title: Drishya's Blog
 
 My [Github account](https://github.com/DrishyaMody) !!
 
-[Hacks](python)
 
-
-- Plans, Lists, [Scrum Boards](https://app.clickup.com/9013049295/v/l/8ckgdyf-313?pr=90130113543): My Key events and progress!!
+[Scrum Boards](https://app.clickup.com/9013049295/v/l/8ckgdyf-313?pr=90130113543)
 
 
 
