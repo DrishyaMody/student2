@@ -35,7 +35,7 @@ function newInputLine(index) {
     var option_value = ["",5,4,3,2,1]
     var score = document.createElement("select"); //dropdownmenu
     score.id = index; // id of select control
-    score.onkeydown = calculator
+    score.onkeydown = calculator //call calculator function(when tab or enter is hit uses the data for calculations)
     score.name = "score";  // name is used to group "score" elements
     document.getElementById("scores").appendChild(score); 
     // Create and add blank line after input box
