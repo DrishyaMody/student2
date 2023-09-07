@@ -6,13 +6,13 @@ courses: {"csp": {"week": 3}}
 permalink: /JSinput
 ---
 <!-- Heading -->
-<h1>Grade Calculator</h1>
-<h2>Input scores, press tab to add each new number.</h2>
+<h1>GPA Calculator</h1>
+<h2>AP Input Grades</h2>
 <!-- Totals -->
 <h3>
     Total : <span id="total">0.0</span>
-    Count : <span id="count">0.0</span>
-    Average : <span id="average">0.0</span>
+    Number of Classes : <span id="count">0.0</span>
+    GPA : <span id="average">0.0</span>
 </h3>
 <!-- Rows -->
 <div id="scores">
@@ -23,25 +23,31 @@ permalink: /JSinput
 // Creates a new input box
 function newInputLine(index) {
 
+
     // Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
-    title.innerHTML = index + ". ";    
+    title.innerHTML = (index + 1) + ". ";    
     document.getElementById("scores").appendChild(title); // add to HTML
 
-    // Setup score element and attributes
-    var score = document.createElement("input"); // input element
-    score.id =  index;  // id of input element
-    score.onkeydown = calculator // Each key triggers event (using function as a value)
-    score.type = "number"; // Use text type to allow typing multiple characters
-    score.name = "score";  // name is used to group "score" elements
-    score.style.textAlign = "right";
-    score.style.width = "5em";
-    document.getElementById("scores").appendChild(score);  // add to HTML
 
+    var option_text = ["---","A","B","C","D","F"]
+    var option_value = ["",5,4,3,2,1]
+    var score = document.createElement("select"); //dropdownmenu
+    score.id = index; // id of select control
+    score.onkeydown = calculator
+    score.name = "score";  // name is used to group "score" elements
+    document.getElementById("scores").appendChild(score); 
     // Create and add blank line after input box
     var br = document.createElement("br");  // line break element
     document.getElementById("scores").appendChild(br); // add to HTML
+    //Create and append the options
+    for (var i = 0; i < option_text.length; i++) {
+        var option = document.createElement("option");
+        option.value = option_value[i];
+        option.text = option_text[i];
+        score.appendChild(option);
+    }
 
     // Set focus on the new input line
     document.getElementById(index).focus();
@@ -61,15 +67,17 @@ function calculator(event) {
         for (var i = 0; i < array.length; i++) {  // iterate through array
             var value = array[i].value;
             if (parseFloat(value)) {
+                array[i].style.backgroundColor = "lightGrey"
                 var parsedValue = parseFloat(value);
                 total += parsedValue;  // add to running total
                 count++;
             }
         }
 
+
         // update totals
         document.getElementById('total').innerHTML = total.toFixed(2); // show two decimals
-        document.getElementById('count').innerHTML = count;
+        document.getElementById('count').innerHTML = count ;
 
         if (count > 0) {
             document.getElementById('average').innerHTML = (total / count).toFixed(2);
