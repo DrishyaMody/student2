@@ -2,8 +2,8 @@
 layout: post
 title: Python Hack
 type: hacks
-courses: {"csp": {"week": 1}}
-permalink: /python-hack
+courses: {'csp': {'week': 1}}
+permalink: /Python-hack
 ---
 
 ```python
@@ -29,7 +29,6 @@ print(f'Hi {name}! Are you ready for the quiz!')
 score=0
 ```
 
-    What is your name?Drishya
     Hi Drishya! Are you ready for the quiz!
 
 
@@ -45,13 +44,10 @@ score=score+question('What sport does Lionel Messi play?', 'soccer')
 score=score+question('How many continents are there?','7')
 ```
 
-    How many planets are in the solar system?8
     8
     Great Job! Thats Correct time for the next question!
-    What sport does Lionel Messi play?soccer
     soccer
     Great Job! Thats Correct time for the next question!
-    How many continents are there?7
     7
     Great Job! Thats Correct time for the next question!
 
@@ -66,8 +62,3 @@ print (f'Your score is {percentage:.2f}%')
 
     Your score is 100.00%
 
-
-
-```python
-
-```

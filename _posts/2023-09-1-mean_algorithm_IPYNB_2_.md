@@ -2,7 +2,8 @@
 layout: post
 title: Mean Algorithm
 type: hacks
-courses: {csp: {week: 2}}
+description: algorithm 
+courses: {'csp': {'week': 2}}
 permalink: /mean-algorithm
 ---
 
