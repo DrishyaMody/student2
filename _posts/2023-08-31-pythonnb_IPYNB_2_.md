@@ -1,8 +1,8 @@
 ---
 layout: post
-title: JS Calculator
+title: Python Hack
 type: hacks
-courses: {'compsci': {'week': 0}}
+courses: {'csp': {'week': 1}}
 categories: ['C1.4']
 ---
 

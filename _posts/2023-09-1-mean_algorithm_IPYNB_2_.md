@@ -1,8 +1,4 @@
 ---
-
----
-
----
 layout: post
 title: Mean Algorithm
 type: hacks
