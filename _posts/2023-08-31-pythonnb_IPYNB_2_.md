@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Python Hack
+title: JS Calculator
 type: hacks
-courses: {'csp': {'week': 1}}
-permalink: /Python-hack
+courses: {'compsci': {'week': 0}}
+categories: ['C1.4']
 ---
 
 ```python
