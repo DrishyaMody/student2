@@ -2,7 +2,7 @@
 layout: post
 title: Python Flask in Jupyter
 type: hacks
-courses: {'csp': {'week': 4}}
+courses: 
 permalink: /pythonflask 
 ---
 
