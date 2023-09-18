@@ -4,7 +4,7 @@ layout: post
 title: Student GitHub Pages
 description: A key to development in this class is the association VSCode to a GitHub pages project.  This is where students update assignments and present work.
 type: hacks
-courses: {'csse': {'week': 1}, 'compsci': {'week': 1}, 'csa': {'week': 0}}
+courses: {'csse': {'week': 1}, 'csp': {'week': 1}, 'csa': {'week': 0}}
 categories: ['C4.1']
 ---
 
