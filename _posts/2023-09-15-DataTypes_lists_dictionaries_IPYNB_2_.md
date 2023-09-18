@@ -12,7 +12,7 @@ type: hacks
 
 # variable of type string
 print("What is the variable name/key?", "value?", "type?", "primitive or collection, why?")
-name = "John Doe"
+name = "Drishya Mody"
 print("name", name, type(name))
 
 ```
@@ -25,7 +25,7 @@ print("name", name, type(name))
 ```python
 # variable of type integer
 print("What is the variable name/key?", "value?", "type?", "primitive or collection, why?")
-age = 18
+age = 17
 print("age", age, type(age))
 ```
 
@@ -101,32 +101,42 @@ InfoDb = []
 
 # Append to List a Dictionary of key/values related to a person and cars
 InfoDb.append({
-    "FirstName": "John",
-    "LastName": "Mortensen",
-    "DOB": "October 21",
+    "FirstName": "Drishya",
+    "LastName": "Mody",
+    "DOB": "July 15, 2006",
     "Residence": "San Diego",
-    "Email": "jmortensen@powayusd.com",
-    "Owns_Cars": ["2015-Fusion", "2011-Ranger", "2003-Excursion", "1997-F350", "1969-Cadillac"]
+    "Email": "modydrishya@gmail.com",
+    "Owns_Cars": ["Mazda", "Tesla"]
 })
 
 # Append to List a 2nd Dictionary of key/values
 InfoDb.append({
-    "FirstName": "Sunny",
-    "LastName": "Naidu",
-    "DOB": "August 2",
-    "Residence": "Temecula",
-    "Email": "snaidu@powayusd.com",
-    "Owns_Cars": ["4Runner"]
+    "FirstName": "Miheer",
+    "LastName": "Purandare",
+    "DOB": "August 3",
+    "Residence": "San Diego",
+    "Email": "miheerpurandare07@gmail.com",
+    "Owns_Cars": ["Tesla", "Acura"]
 })
 
 # Append to List a 2nd Dictionary of key/values
 InfoDb.append({
-    "FirstName": "Shane",
-    "LastName": "Lopez",
-    "DOB": "February 27",
+    "FirstName": "Tanvi",
+    "LastName": "Pampati",
+    "DOB": "March 30",
     "Residence": "San Diego",
-    "Email": "???@powayusd.com",
-    "Owns_Cars": ["2021-Insight"]
+    "Email": "tanvi.pampati@gmail.com",
+    "Owns_Cars": ["Tesla Model 3"]
+})
+
+# Append to List a 3rd Dictionary of key/values
+InfoDb.append({
+    "FirstName": "Anagha",
+    "LastName": "Ashtewale",
+    "DOB": "December 12",
+    "Residence": "San Diego",
+    "Email": "aashtewale@gmail.com",
+    "Owns_Cars": ["Audi", "Toyota"]
 })
 
 # Print the data structure
