@@ -6,14 +6,6 @@ courses: {'compsci': {'week': 0}}
 categories: ['C1.4']
 ---
 
----
-layout: post
-title: Python Hack
-type: hacks
-courses: {'csp': {'week': 1}}
-categories: ['C1.4']
----
-
 
 ```python
 #Function definition(prompt, answer): this function asks question and checks useranswer is correct and returns a point if answer is correct
