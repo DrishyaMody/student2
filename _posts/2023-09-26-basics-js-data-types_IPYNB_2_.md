@@ -440,12 +440,11 @@ Create a JavaScript snippet below with the following requirements:
 %%js
 // Create an object representing yourself
 const person = {
-    name: "Tanvi Pampati",
+    name: "Drishya Mody",
     age: 16,
-    currentClasses: ["CompSci", "APEL", "APES","AP Physics" ],
-    interests: ["Hockey", "Cooking"],
-    favoriteBooks: ["When breath becomes air"],
-    favoriteNumbers: [3, 30],
+    currentClasses: ["CompSci", "AP Stats", "APES","US History 1", "American Literature" ],
+    interests: ["Soccer"],
+    favoriteNumbers: [10, 14],
   };
 
   // Print the entire object
@@ -455,7 +454,6 @@ const person = {
   // Manipulate the arrays within the object
   person.currentClasses.push("AP Calculus BC");
   person.interests.shift();
-  person.favoriteBooks[0] = "Maze Runner";
 
   // Print the entire object after manipulation
   console.log("Object After Manipulation:");

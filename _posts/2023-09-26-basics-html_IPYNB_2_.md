@@ -169,7 +169,7 @@ Div (groups together related content)
     <button><a href="https://drishyamody.github.io/student2/">My Website</a></button>
 </div>
 <div>
-    <a href="https://drishyamody.github.io/student2/">My Website</a>
+    <a href="https://miggysp.github.io/student2/">My Partners Website</a>
     <a href="https://drishyamody.github.io/student2/">My Website</a>
     <p>This is an example of text
 
@@ -181,9 +181,8 @@ Div (groups together related content)
     <button><a href="https://drishyamody.github.io/student2/">My Website</a></button>
 </div>
 <div>
+    <a href="https://miggysp.github.io/student2/">My Partners Website</a>
     <a href="https://drishyamody.github.io/student2/">My Website</a>
-    <a href="https://drishyamody.github.io/student2/">My Website</a>
-    <p>This is a paragraph</p>
-</div>
+    <p>This is an example of text
 
 
