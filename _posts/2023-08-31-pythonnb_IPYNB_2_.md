@@ -1,11 +1,11 @@
 ---
+toc: True
+comments: True
 layout: post
-title: JS Calculator
+title: Python Quiz
+courses: {'csp': {'week': 1}}
 type: hacks
-courses: {'compsci': {'week': 0}}
-categories: ['C1.4']
 ---
-
 
 ```python
 #Function definition(prompt, answer): this function asks question and checks useranswer is correct and returns a point if answer is correct

@@ -37,15 +37,21 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var alphabetList = [];
 
 for (var i = 0; i < 10; i++) {
-	alphabetList.push(i);
+    alphabetList.push(alphabet[i]);
 }
 
 console.log(alphabetList);
 ```
 
+
+    <IPython.core.display.Javascript object>
+
+
 ### What I Changed
 
+What I Changed
 I changed...
+In the corrected code, the 'i' variable is being used to index the 'alphabet' strong and push the corresponding letters into the list which will give the first 10 letters
 
 ## Segment 2: Numbered Alphabet
 
@@ -76,6 +82,10 @@ for (var i = 0; i < alphabetList; i++) {
 // "e" is letter number 5 in the alphabet
 ```
 
+
+    <IPython.core.display.Javascript object>
+
+
 ### What I Changed
 
 I changed...
@@ -90,20 +100,24 @@ Intended behavior: print a list of all the odd numbers below 10
 ```python
 %%js
 
-let evens = [];
-let i = 0;
+let odds = [];
 
-while (i <= 10) {
-  evens.push(i);
-  i += 2;
+for (let i = 1; i < 10; i += 2) {
+  odds.push(i);
 }
 
-console.log(evens);
+console.log(odds);
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 ### What I Changed
 
+What I Changed
 I changed...
+I renamed the varaible 'evens' to 'odds' to show a collection of odd numbers. Started the loop with a varaible so it could start with the first odd number
 
 # BELOW NOT EDITED
 
@@ -115,24 +129,26 @@ The intended outcome is printing a number between 1 and 100 once, if it is a mul
 ```python
 %%js
 
-var numbers = []
-var newNumbers = []
-var i = 0
+var numbers = [];
+var newNumbers = [];
 
-while (i < 100) {
-    numbers.push(i)
-    i += 1
+for (var i = 1; i <= 100; i++) {
+    if (i % 2 === 0 || i % 5 === 0) {
+        newNumbers.push(i);
+    }
 }
-for (var i of numbers) {
-    if (numbers[i] % 5 === 0)
-        newNumbers.push(numbers[i])
-    if (numbers[i] % 2 === 0)
-        newNumbers.push(numbers[i])
-}
-console.log(newNumbers) 
 
+console.log(newNumbers);
 
 ```
+
+
+    <IPython.core.display.Javascript object>
+
+
+What I Changed
+I changed...
+Added a 'for' loop to iterate from 1 to 100 and added statemnets to make sure the number is divisible by 2 or 5. This is then pushed into an array whcihc contains the numbers.
 
 # Challenge
 
@@ -168,6 +184,10 @@ var item = "burger"
 //code should add the price of the menu items selected by the user 
 console.log(total)
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 ## Hacks
 - Fix the errors in the first three segments in this notebook and say what you changed in the code cell under "What I Changed" (Challenge is optional)

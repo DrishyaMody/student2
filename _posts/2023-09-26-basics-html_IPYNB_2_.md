@@ -5,7 +5,7 @@ title: Basics of HTML Guide
 description: An introduction to basic HTML, and resources to learn more.
 type: hacks
 course: {'csp': {'week': 6}}
-permalink: /basics-html
+permalink: /basics/html
 author: Rohan Juneja
 ---
 
@@ -164,12 +164,26 @@ Div (groups together related content)
 
 ```python
 %%html
+<div>
+    <p>This is an example of text</p>
+    <button><a href="https://drishyamody.github.io/student2/">My Website</a></button>
+</div>
+<div>
+    <a href="https://drishyamody.github.io/student2/">My Website</a>
+    <a href="https://drishyamody.github.io/student2/">My Website</a>
+    <p>This is an example of text
 
-<!-- put your HTML code in this cell, Make sure to press the Run button to see your results below -->
 ```
 
 
-
-<!-- put your HTML code in this cell, Make sure to press the Run button to see your results below -->
+<div>
+    <p>This is an example of text</p>
+    <button><a href="https://drishyamody.github.io/student2/">My Website</a></button>
+</div>
+<div>
+    <a href="https://drishyamody.github.io/student2/">My Website</a>
+    <a href="https://drishyamody.github.io/student2/">My Website</a>
+    <p>This is a paragraph</p>
+</div>
 
 

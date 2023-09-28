@@ -4,7 +4,7 @@ hide: True
 description: A Tech Talk on javascript data types and how to use with lists
 type: hacks
 course: {'csp': {'week': 6}}
-permalink: /basics-datatypes
+permalink: /basics/datatypes
 author: Rohan Juneja
 ---
 
@@ -438,7 +438,44 @@ Create a JavaScript snippet below with the following requirements:
 
 ```python
 %%js
-// put your javascript code here (make sure to run it and check your outputs in the console)
+// Create an object representing yourself
+const person = {
+    name: "Tanvi Pampati",
+    age: 16,
+    currentClasses: ["CompSci", "APEL", "APES","AP Physics" ],
+    interests: ["Hockey", "Cooking"],
+    favoriteBooks: ["When breath becomes air"],
+    favoriteNumbers: [3, 30],
+  };
+
+  // Print the entire object
+  console.log("Original Object:");
+  console.log(person);
+
+  // Manipulate the arrays within the object
+  person.currentClasses.push("AP Calculus BC");
+  person.interests.shift();
+  person.favoriteBooks[0] = "Maze Runner";
+
+  // Print the entire object after manipulation
+  console.log("Object After Manipulation:");
+  console.log(person);
+
+  // Perform mathematical operations
+  const ageIn5Years = person.age + 5;
+  const halfAge = person.age / 2;
+  const remainderOfAge = person.age % 3;
+
+  console.log("Mathematical Operations:");
+  console.log(In 5 years, I will be ${ageIn5Years} years old.);
+  console.log(Half of my age is ${halfAge}.);
+  console.log(The remainder of my age divided by 3 is ${remainderOfAge}.);
+
+  // Use typeof to determine types of fields
+  console.log("Types of Fields:");
+  console.log(typeof name: ${typeof person.name});
+  console.log(typeof age: ${typeof person.age});
+  console.log(typeof interests: ${typeof person.interests});
 ```
 
 

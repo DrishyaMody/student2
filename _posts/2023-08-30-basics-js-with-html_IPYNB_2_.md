@@ -249,18 +249,70 @@ console.log(titleElement.innerHTML)
 
 ```python
 %%html
-<!-- html code goes here (make sure to run) -->
+<head>
+    <title>Link Switcher</title>
+</head>
+<body>
+    <a id="link1" href="https://drishyamody.github.io/student2">Link 1</a>
+    <a id="link2" href="https://miggysp.github.io/student2">Link 2</a>
+    <button onclick="switchLinks()">Switch Links</button>
 
-<script>
-  // your javascript code goes here
-</script>
+    <script>
+        // Define the linksSwitched variable and set it to false initially
+        var linksSwitched = false;
+
+        function switchLinks() {
+            if (!linksSwitched) {
+                var link1 = document.getElementById("link1");
+                var link2 = document.getElementById("link2");
+
+                // Swap the href attributes of the two links
+                var tempHref = link1.href;
+                link1.href = link2.href;
+                link2.href = tempHref;
+
+                // Show a pop-up message to indicate that the links have been switched
+                alert("Links have been switched!");
+
+                // Set the flag to indicate that links are switched
+                linksSwitched = true;
+            }
+        }
+    </script>
+</body>
 ```
 
 
-<!-- html code goes here (make sure to run) -->
+<head>
+    <title>Link Switcher</title>
+</head>
+<body>
+    <a id="link1" href="https://drishyamody.github.io/student2">Link 1</a>
+    <a id="link2" href="https://miggysp.github.io/student2">Link 2</a>
+    <button onclick="switchLinks()">Switch Links</button>
 
-<script>
-  // your javascript code goes here
-</script>
+    <script>
+        // Define the linksSwitched variable and set it to false initially
+        var linksSwitched = false;
+
+        function switchLinks() {
+            if (!linksSwitched) {
+                var link1 = document.getElementById("link1");
+                var link2 = document.getElementById("link2");
+
+                // Swap the href attributes of the two links
+                var tempHref = link1.href;
+                link1.href = link2.href;
+                link2.href = tempHref;
+
+                // Show a pop-up message to indicate that the links have been switched
+                alert("Links have been switched!");
+
+                // Set the flag to indicate that links are switched
+                linksSwitched = true;
+            }
+        }
+    </script>
+</body>
 
 

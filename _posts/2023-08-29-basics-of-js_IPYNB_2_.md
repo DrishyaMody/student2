@@ -351,7 +351,18 @@ if (age1 > age2) {
 
 ```python
 %%js
-// put your javascript code here
+// Define two variables a and b with some values
+var a = 10;
+var b = 5;
+
+// Compare the values of a and b
+if (a > b) {
+    console.log("a is greater");
+} else if (b > a) {
+    console.log("b is greater");
+} else {
+    console.log("both are equal");
+}
 ```
 
 
