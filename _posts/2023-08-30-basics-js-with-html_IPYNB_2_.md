@@ -1,4 +1,5 @@
 ---
+comments: True
 title: Using Javascript with HTML DOM
 hide: True
 description: A Tech Talk on how javascript can interact with HTML DOM

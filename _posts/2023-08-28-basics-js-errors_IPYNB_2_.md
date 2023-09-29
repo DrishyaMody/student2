@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: True
 title: 1.4 Correcting errors
 description: Practice with identifying and correcting code blocks
 type: hacks

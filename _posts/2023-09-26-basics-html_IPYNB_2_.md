@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: True
 hide: True
 title: Basics of HTML Guide
 description: An introduction to basic HTML, and resources to learn more.

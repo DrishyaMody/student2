@@ -1,5 +1,6 @@
 ---
 title: Javascript Data Types/Lists
+comments: True
 hide: True
 description: A Tech Talk on javascript data types and how to use with lists
 type: hacks

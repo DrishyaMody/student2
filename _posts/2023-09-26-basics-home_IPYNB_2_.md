@@ -1,4 +1,5 @@
 ---
+comments: True
 layout: post
 title: Web Programming Basics
 description: An introduction to key topics in Web Programming

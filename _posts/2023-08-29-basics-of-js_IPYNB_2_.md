@@ -1,5 +1,6 @@
 ---
 title: Basics of Javascript
+comments: True
 hide: True
 description: A Tech Talk on how to use javascript
 type: hacks
