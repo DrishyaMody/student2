@@ -1,6 +1,25 @@
 ---
-
+toc: True
+comments: True
+layout: post
+title: Student Teaching Hacks
+courses: {'csp': {'week': 8}}
+type: hacks
 ---
+
+```python
+#Popcorn Hack
+num1 = 5
+num2 = 7
+are_equal = num1 == num2 
+
+print(are_equal)
+
+```
+
+    False
+
+
 
 ```python
 #Popcorn Hack
