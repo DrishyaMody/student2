@@ -1,6 +1,40 @@
 ---
-
+comments: True
+layout: post
+title: Homework Hacks on Variables
+courses: {'csp': {'week': 9}}
+type: hacks
 ---
+
+```python
+#Variable 1 
+numStudents = 26
+print(numStudents)
+
+
+#Variable2
+car = 'tesla'
+print(car)
+ 
+#Variable3
+groupMates=['Nikki', 'Monika', 'Ankit', 'Varun']
+
+#Variable4
+dogsbeatcats=True
+print(dogsbeatcats)
+
+
+#Variable 1 is an integer
+#Variable 2 is a string
+#Variable 3 is a list
+#Variable 4 is a boolean
+```
+
+    26
+    tesla
+    True
+
+
 
 ```python
 #HACK 2

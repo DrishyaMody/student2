@@ -1,6 +1,12 @@
 ---
-
+comments: True
+layout: post
+title: Team Teach on Iteration
+courses: {'csp': {'week': 9}}
+type: hacks
 ---
+
+# Team Tech Talk: Iteration
 
 Group members: Marcus, Hao, Ameer, Kayden
 

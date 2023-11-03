@@ -1,7 +1,7 @@
 ---
 comments: True
 layout: post
-title: our team teach lesson
+title: My team's teach lesson on Lists and Searches
 courses: {'csp': {'week': 9}}
 type: hacks
 permalink: /teach/home

@@ -1,9 +1,8 @@
 ---
-toc: True
 comments: True
 layout: post
-title: Student Teaching Hacks
-courses: {'csp': {'week': 8}}
+title: Homework Hacks for Boolean team teach
+courses: {'csp': {'week': 9}}
 type: hacks
 ---
 

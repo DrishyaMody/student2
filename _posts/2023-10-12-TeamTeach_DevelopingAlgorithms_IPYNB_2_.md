@@ -2,6 +2,14 @@
 
 ---
 
+---
+comments: true
+layout: post
+title: Team Teach on Developing algorithms
+courses: {csp: {week: 9} }
+type: hacks
+---
+
 ### What is an Algorithm   
 An algorithm is a set of instructions for solving a specific problem or performing a particular task.
 
