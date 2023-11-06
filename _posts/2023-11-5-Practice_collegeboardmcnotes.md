@@ -7,6 +7,10 @@ courses: {'csp': {'week': 12} }
 type: hacks
 ---
 
-- 
-- practice Libraries. (go back to library team teach and rework homework hacks)
-- Practice Conditionals (go back to college board videos and review)
+- Number 3 had to google (citizen science)
+- IEFT(Internet engineering task force)
+- Number 16 (DMCA)
+- Number 23 (Redundant routing)
+- Number 24 (Byte Pair Encoding)
+- Number 35 (Copy right Violations)
+- Binary numbers review
