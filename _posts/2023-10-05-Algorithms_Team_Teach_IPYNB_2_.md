@@ -2,7 +2,7 @@
 comments: True
 layout: post
 title: Team Teach on Algorithms
-courses: {'csp': {'week': 9}}
+courses: {'csp': {'week': 8}}
 type: hacks
 ---
 

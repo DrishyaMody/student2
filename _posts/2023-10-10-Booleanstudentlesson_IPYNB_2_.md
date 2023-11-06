@@ -2,7 +2,7 @@
 comments: True
 layout: post
 title: Homework Hacks for Boolean team teach
-courses: {'csp': {'week': 9}}
+courses: {'csp': {'week': 8}}
 type: hacks
 ---
 
