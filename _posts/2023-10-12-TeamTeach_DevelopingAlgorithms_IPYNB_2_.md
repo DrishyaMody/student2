@@ -1,8 +1,4 @@
 ---
-
----
-
----
 comments: true
 layout: post
 title: Team Teach on Developing algorithms
