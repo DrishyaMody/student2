@@ -254,13 +254,13 @@ sʞɹoʍʇǝu uǝǝʍʇǝq ʍoʅⅎ ɔᴉⅎⅎɐɹꓕ .ɔ :ɹǝʍsu∀
 
 1. b. Physical addressing: When we send information, we send it "physically" hence the name physical layer
 2. c. switch : Manages MAC addresses for unique identification of devices. Regulates frame flow to prevent network congestion.
-3. a. Devices on the same network: 
-4. b. Frame Forwarding
-5. b. physical layer
-6. a. IP addresses
-7. c. TCP (transimission control protocol)
-8. c. TCP acknowledges data reciept, while UDP doesn't 
-9. c. Traffic Flow between networks
+3. a. Devices on the same network:  Manages MAC addresses for unique identification of devices.
+4. b. Frame Forwarding: Routers - How frames are encapsulated into packets
+5. b. physical layer:  Manages the physical connection and transmission of raw data bits.
+6. a. IP addresses:  Focuses on logical addressing and routing data between different networks.
+7. c. TCP (transimission control protocol): Manages end-to-end communication, ensuring reliable and ordered data delivery.
+8. c. TCP acknowledges data reciept, while UDP doesn't: Layer 4 has two protocols UDP and TCP, you can think of it as UDP you just spam packets to the other network without acknowledgement whereas TCP you need to acknowledge everything sent to the other network. In other words, TCP is slower but more reliable, while UDP is faster but less reliable
+9. c. Traffic Flow between networks: 
 10. c. UDP provides faster communication
 
 
