@@ -3,7 +3,7 @@ toc: True
 comments: True
 layout: post
 title: Computing Bias
-courses: {'compsci': {'week': 16}}
+courses: {'csp': {'week': 16}}
 type: hacks
 ---
 
