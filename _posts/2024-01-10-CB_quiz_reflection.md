@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: Safe Computing
-courses: { compsci: {week: 18} }
+courses: { csp: {week: 18} }
 type: hacks
 ---
 
