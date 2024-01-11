@@ -30,7 +30,7 @@ Correct Answer: C
 - This was a question I struggled with as I had never heard of the term overflow error but from what it sounded like i thought it was  an error that means the program cannot represent integers. But I realised that while fractions are sometimes represented by decimal approximations that are subject to rounding errors, integers are not.
 
 QUESTION NUMBER 23
-![Alt text](<../images/Screenshot 2024-01-11 at 11.14.02 AM.png>)
+<img src="images/question23.png" alt="Question #23" height="600" width="700">
 My Original Answer: B
 Correct Answer: D
 
@@ -38,8 +38,7 @@ Correct Answer: D
 
 
 QUESTION NUMBER 67
-![Alt text](<../images/Screenshot 2024-01-11 at 11.24.22 AM.png>)
-
+<img src="images/question67.png" alt="Question #67" height="600" width="700"> 
 My Original Answer: A
 Correct Answer: A and B
 
