@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Safe Computing
+title: CB quiz reflection
 courses: { csp: {week: 18} }
 type: hacks
 ---
