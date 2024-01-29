@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: SASS Javascript Login and Signup Page
 description: Team teach about SASS Javascript login and signup page
-courses: { compsci: {week: 20} }
+courses: { csp: {week: 20} }
 type: hacks
 ---
 
