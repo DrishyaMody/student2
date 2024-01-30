@@ -20,7 +20,7 @@ type: hacks
         const enteredName = document.getElementById("name").value;
         const enteredUid = document.getElementById("uid").value;
         const enteredPassword = document.getElementById("password").value;
-        const enteredDOB = document.getElementById("DOB").value;
+        const enteredDOB = document.getElementById("dob").value;
         console.log("Name = " + enteredName)
         console.log("Uid = " + enteredUid)
         console.log("Password = " + enteredPassword)
@@ -50,7 +50,7 @@ type: hacks
           "name" : name,
           "uid": uid,
           "password": pw,
-          "DOB": DOB
+          "dob": dob
         });
 
       var requestOptions = {
@@ -104,8 +104,8 @@ type: hacks
     <p><label for="password">Password:</label>
     <input type="password" id="password" placeholder="Password" />
     </p>
-    <p><label for="DOB">Date Of Birth:</label>
-    <input type="text" id="DOB" placeholder="Date of Birth (YYYY-MM-DD)" />
+    <p><label for="dob">Date Of Birth:</label>
+    <input type="text" id="dob" placeholder="Date of Birth (YYYY-MM-DD)" />
     </p>
     <button class="button-spacing">Submit</button>
     </form>

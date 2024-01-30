@@ -5,7 +5,7 @@ layout: post
 title: Crowdsourcing
 description: This is the team teach for crowdsourcing.
 type: plans
-courses: {'compsci': {'week': 2}}
+courses: {'csp': {'week': 14}}
 ---
 
 ## <font color = "#0096FF"> Learning Objective IOC-1.E: 

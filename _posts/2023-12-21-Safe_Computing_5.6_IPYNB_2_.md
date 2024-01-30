@@ -3,7 +3,7 @@ toc: True
 comments: True
 layout: post
 title: Safe Computing
-courses: {'compsci': {'week': 17}}
+courses: {'csp': {'week': 17}}
 type: hacks
 ---
 
@@ -237,32 +237,5 @@ print(x if z == 0 else y)
 Go to a website that checks your password and make a strong password.
 
 
-
-### Homework
-
-**Please answer these questions and send them to Daniel Lee on Slack. Graded on accuracy.**
-
-    What is Personal Identifiable Information (PII), and list three examples of it?
-
-
-    What is a possible risk or cons to using PII?
-
-
-    What are traits of a strong password?
-
-
-    What does having a strong password prevent?
-
-
-    What are the two types of decryption and what is the difference between the two?
-
-
-    What is phishing?
-
-
-    What is a way a keylogger can get into your computer?
-
-
-    What is a rogue access point and how is it used?
 
 
