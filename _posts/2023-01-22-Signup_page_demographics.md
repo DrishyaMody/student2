@@ -24,7 +24,7 @@ type: hacks
         console.log("Name = " + enteredName)
         console.log("Uid = " + enteredUid)
         console.log("Password = " + enteredPassword)
-        console.log("DOB = " + enteredDOB)
+        console.log("dob = " + enteredDOB)
         const signupHeaders = new Headers();
       signupHeaders.set('111', '222');
       
@@ -37,7 +37,7 @@ type: hacks
       }
     
 
-    function signUp_api(name, uid, pw, DOB){
+    function signUp_api(name, uid, pw, dob){
       let signupHeaders = new Headers();
       signupHeaders.append('111', '222');
       
