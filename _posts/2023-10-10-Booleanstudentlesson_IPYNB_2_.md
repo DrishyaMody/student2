@@ -28,7 +28,7 @@ are_not_equal = num1 == num2
 print(are_not_equal)
 ```
 
-    True
+    False
 
 
 

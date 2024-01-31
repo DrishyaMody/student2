@@ -2,7 +2,7 @@
 comments: True
 layout: post
 title: Team Teach on Iteration
-courses: {'csp': {'week': 8}}
+courses: {'csp': {'week': 9}}
 type: hacks
 ---
 
