@@ -53,11 +53,11 @@ type: hacks
           redirect: 'follow'
         };
 
-      fetch("http://localhost:8090/api/users/authenticate", requestOptions)
+      fetch("http://127.0.0.1:8090/api/users/authenticate", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "http://localhost:4200/student2/2023/01/30/24-parentpage_weather.html"
+                window.location.href = "https://drishyamody.github.io/student2/2023/01/30/24-parentpage_weather.html"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
@@ -96,7 +96,7 @@ type: hacks
     </p>
     <p>
      <button class="button-spacing">Log In</button>
-          <button onClick = "window.location.href ='https://drishyamody.github.io/student2//2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
+          <button onClick = "window.location.href ='https://drishyamody.github.io/student2/2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
 
       
     </p>
