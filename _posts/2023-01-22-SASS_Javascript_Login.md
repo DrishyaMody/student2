@@ -38,8 +38,23 @@ type: hacks
       myHeaders.append("Accept", "*/*");
       myHeaders.append("Accept-Language", "en-US,en;q=0.9");
       myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("Cookie", "jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfdWlkIjoidG9ueSJ9.jEShka0oXI1-uCuSTfo3ed5WRw3ASLNV0Tpn1kc5GB0");
+      //myHeaders.append("Cookie", "jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfdWlkIjoidG9ueSJ9.jEShka0oXI1-uCuSTfo3ed5WRw3ASLNV0Tpn1kc5GB0");
+      myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.e30.BSQAHTECtxHe2dzC75Ijpz18pTmjDb1q6WWrJMOLlm0");
+      myHeaders.append("Cookie", "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdWlkIjoibWJhNCJ9.oBlUf7JKmb_rLaoAFJ55yUs-70O7NUAFE6ALOXOviUc");
 
+var raw = "";
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8090/api/users", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 
       var raw = JSON.stringify({
           "uid": uid,
@@ -58,6 +73,7 @@ type: hacks
             if (response.ok) {
                 console.log("User logged in successfully");
                 window.location.href = "https://drishyamody.github.io/student2/2023/01/30/24-parentpage_weather.html"
+
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
