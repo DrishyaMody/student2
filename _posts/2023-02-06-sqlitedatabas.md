@@ -1,35 +1,85 @@
 ---
-toc: true
-comments: true
 layout: post
-title: SQL Database
-courses: { csp: {week: 21} }
+title: Database Fetch
+courses: { csp: {week: 20} }
+permalink: /data/database
 type: hacks
-
 ---
 
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
 
-## SQL Database Fetch
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
 
-<!-- HTML table layout for page.  The table is filled by JavaScript below. 
--->
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<!-- HTML table layout for page.  The table is filled by JavaScript below. -->
+<h2>SQL Database Fetch</h2>
 <table>
   <thead>
-  <tr>
-    <th>Name</th>
-    <th>ID</th>
-    <th>Age</th>
-  </tr>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Age</th>
+    </tr>
   </thead>
   <tbody id="result">
     <!-- javascript generated data -->
   </tbody>
 </table>
 
+
+
+<p><a href="{{site.baseurl}}/login-redirect">Return to home page</a></p>
+
 <!-- 
 Below JavaScript code fetches user data from an API and displays it in a table. It uses the Fetch API to make a GET request to the '/api/users/' endpoint.   Refer to config.js to see additional options. 
-
-The script is laid out in a sequence (no function) and will execute when page is loaded.
 -->
 <script type="module">
   // uri variable and options object are obtained from config.js
@@ -47,6 +97,12 @@ The script is laid out in a sequence (no function) and will execute when page is
     .then(response => {
       // check for response errors and display
       if (response.status !== 200) {
+        if (response.status === 401) {
+          // Unauthorized - Redirect to 401 error page
+          window.location.href = "/lmc-frontend/lmc-login";
+        } else if (response.status === 403) {
+          // Forbidden - Redirect to 403 error page
+          alert(response.status + " error. Redirecting you to the login")
           const errorMsg = 'Database response error: ' + response.status;
           console.log(errorMsg);
           const tr = document.createElement("tr");
@@ -54,37 +110,42 @@ The script is laid out in a sequence (no function) and will execute when page is
           td.innerHTML = errorMsg;
           tr.appendChild(td);
           resultContainer.appendChild(tr);
+          window.location.href = "/lmc-frontend/lmc-login";
           return;
+        }
       }
       // valid response will contain JSON data
       response.json().then(data => {
-          console.log(data);
-          for (const row of data) {
-            // tr and td build out for each row
-            const tr = document.createElement("tr");
-            const name = document.createElement("td");
-            const id = document.createElement("td");
-            const age = document.createElement("td");
-            // data is specific to the API
-            name.innerHTML = row.name; 
-            id.innerHTML = row.uid; 
-            age.innerHTML = row.age; 
-            // this builds td's into tr
-            tr.appendChild(name);
-            tr.appendChild(id);
-            tr.appendChild(age);
-            // append the row to table
-            resultContainer.appendChild(tr);
-          }
-      })
-  })
-  // catch fetch errors (ie ACCESS to server blocked)
-  .catch(err => {
-    console.error(err);
-    const tr = document.createElement("tr");
-    const td = document.createElement("td");
-    td.innerHTML = err + ": " + url;
-    tr.appendChild(td);
-    resultContainer.appendChild(tr);
-  });
+        console.log(data);
+        for (const row of data) {
+          // tr and td build out for each row
+          const tr = document.createElement("tr");
+          const name = document.createElement("td");
+          const id = document.createElement("td");
+          const age = document.createElement("td");
+          const email = document.createElement("td");
+          // data is specific to the API
+          name.innerHTML = row.name;
+          id.innerHTML = row.uid;
+          age.innerHTML = row.age;
+          
+          // this builds td's into tr
+          tr.appendChild(name);
+          tr.appendChild(id);
+          tr.appendChild(age);
+          tr.appendChild(email);
+          // append the row to table
+          resultContainer.appendChild(tr);
+        }
+      });
+    })
+    // catch fetch errors (ie ACCESS to server blocked)
+    .catch(err => {
+      console.error(err);
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.innerHTML = err + ": " + url;
+      tr.appendChild(td);
+      resultContainer.appendChild(tr);
+    });
 </script>

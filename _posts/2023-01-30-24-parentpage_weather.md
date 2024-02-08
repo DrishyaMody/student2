@@ -21,7 +21,7 @@ type: hacks
         function loadContent() {
             if (checkCookiesEnabled()) {
                 // Cookies are enabled, load the iframe
-                document.getElementById("main-content").innerHTML = '<iframe src="http://127.0.0.1:4200/student2//2023/02/06/sqlitedatabas.html" width="100%" height="600px" style="border:none;"></iframe>';
+                document.getElementById("main-content").innerHTML = '<iframe src="{{site.baseurl}}/data/database" width="150%" height="800px" style="border:none;"></iframe>';
             } else {
                 // Cookies are not enabled, display error message
                 document.getElementById("main-content").textContent = "403 Forbidden: Cookies are not enabled in your browser.";
