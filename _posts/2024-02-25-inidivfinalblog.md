@@ -51,3 +51,14 @@ Use at least one list (or other collection type) to represent collection of data
 Included parameters in my programs are, the userid or to the user displayed as the username, the date of the question asked which is stored in the database as "doq", the parentPostId which is the id of a question stored inside of the id of the user. So if we were to test a GET method of a specific user it would also show under their id their quesitons and responses. The note parameter in the POSTS database stores the questions. 
 
 
+### KEY COMMITS ###
+[Commit1](https://github.com/DrishyaMody/CollaboraDJAK/commit/66891110ecebf87dc1cc7e9b7d1d676eddd5cc9e)
+
+[Commit2](https://github.com/DrishyaMody/CollaboraDJAK/commit/963064e6d3fb69f41b933eb77592b81ce7e0b7da#diff-8b59579ab8d325a01df5affb5a3a867271d8e46391eb0fb36231a8cb083ed9fb)
+
+<img src="https://drishyamody.github.io/student2/images/commitContributions.png" height="400" width="700">
+
+
+### OVERALL RETROSPECTIVE ###
+
+Throughout this process I realised my potential for leadership and problem solving. Throughout the process of making Collabora I was exposed to the true power of agile methodology and working efficentely together as a team. This enlightened not only my capabilities as a leader but also my strenghts at problem solving and my desire to acheive the end result despite the external factors like time and lathargy that come into play.
