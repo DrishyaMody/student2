@@ -59,11 +59,13 @@ Included parameters in my programs are, the userid or to the user displayed as t
 <img src="https://drishyamody.github.io/student2/images/commitContributions.png" height="400" width="700">
 
 
-### OVERALL RETROSPECTIVE ###
 
-Throughout this process I realised my potential for leadership and problem solving. Throughout the process of making Collabora I was exposed to the true power of agile methodology and working efficentely together as a team. This enlightened not only my capabilities as a leader but also my strenghts at problem solving and my desire to acheive the end result despite the external factors like time and lathargy that come into play.
 
 
 My Trimester 2 grade: 
 <img src="https://drishyamody.github.io/student2/images/cspgrade.png" height="400" width="700">
 
+
+### OVERALL RETROSPECTIVE ###
+
+Throughout this process I realised my potential for leadership and problem solving. Throughout the process of making Collabora I was exposed to the true power of agile methodology and working efficentely together as a team. This enlightened not only my capabilities as a leader but also my strenghts at problem solving and my desire to acheive the end result despite the external factors like time and lathargy that come into play.
