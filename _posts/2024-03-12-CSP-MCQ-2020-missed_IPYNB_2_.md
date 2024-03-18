@@ -1,7 +1,8 @@
 ---
 layout: post
-title: MCQ 2020 Frequently Missed Questions
+title: MCQ 2020 Frequently Missed Questions HACKS
 type: hacks
+comments: True
 courses: {'csp': {'week': 26}}
 ---
 
