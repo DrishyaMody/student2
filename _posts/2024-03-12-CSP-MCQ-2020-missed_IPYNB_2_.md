@@ -457,11 +457,11 @@ The process outlined in Answer B does indeed result in the string â€œjackalopeâ€
 # Incorrect Answer D
 # as a popcorn hack (binary challenge), create string and concatenation options for A, B, C
  
-animal = "jackrabbit"[0:4]  # Substring("jackrabbit", 1, 4)
+animal = "tiger"[0:4]  # Substring("jackrabbit", 1, 4)
 animal += "a"  # Concat(animal, "a")
-animal = "antelope"[4:8] + animal  # Concat(Substring("antelope", 5, 4), animal)
+animal = "rhinocerous"[4:8] + animal  # Concat(Substring("antelope", 5, 4), animal)
 print(animal)  # Outputs: lopejacka
 ```
 
-    lopejacka
+    ocertigea
 
