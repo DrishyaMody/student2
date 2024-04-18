@@ -9,20 +9,26 @@ permalink: writeup
 ---
 
 - From VSCode using SQLite3 Editor, show your unique collection/table in database, display rows and columns in the table   of the SQLite database.
-<img src="http://0.0.0.0:4200/student2/images/databaseCollabora.png" height="500" width="600">  
+This database consists of questions and responses in which I have categorized as "notes"
+
+<img src="https://drishyamody.github.io/student2/images/databaseCollabora.png" height="500" width="600">  
 
 - From VSCode model, show your unique code that was created to initialize table and create test data.
 
-<img src="http://0.0.0.0:4200/student2/images/modelCode.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/modelCode.png" height="500" width="600">  
 
 
 Lists and Dictionaries
 Blog Python API code and use of List and Dictionaries.
 
 - In VSCode using Debugger, show a list as extracted from database as Python objects.
-<img src="http://0.0.0.0:4200/student2/images/vscodevariablething.png" height="500" width="600">  
-
 - In VSCode use Debugger and list, show two distinct example examples of dictionaries, show Keys/Values using debugger.
+The data shown in the debugger terminal is data passed through a post request. IN this case simulating someone asking a question, this is a very similar concept for replying to a question. 
+
+Keys are the purple values on the left hand side of the debugger terminal while its values are the orange text besides it representing the user input for a question in context.
+
+<img src="https://drishyamody.github.io/student2/images/vscodevariablething.png" height="500" width="600">  
+
 
 
 APIs and JSON
@@ -30,24 +36,42 @@ Blog Python API code and use of Postman to request and respond with JSON.
 
 - In VSCode, show Python API code definition for request and response using GET, POST, UPDATE methods. Discuss algorithmic condition used to direct request to appropriate Python method based on request method.
 
-<img src="http://0.0.0.0:4200/student2/images/getCRUD.png" height="500" width="600">  
-<img src="http://0.0.0.0:4200/student2/images/postCRUD.png" height="500" width="600">  
+GET: I have applied the GET method in the research aspect of my feature. When a user searches for a question with a key word using the GET method and with query syntax to apply the condition of finding database data with the key word inputted by the user all questions with the users key word are displayed in a user acceptable form.
+
+POST: I have applied the POST method in the asking questions and replying to questions aspect of my feature. When the user asks a question or replys to a question the POST method is called. This is something I want to work on as I have found that all replys and questions are stored in the same column on my database as shown above. I aim to find a way to differentiate the replys and questions to acheive the most organized data possible.
+
+PUT: I have applied the PUT method in the user information aspect of my CPT. The user can change their DOB, UID, NAME. This has not yet been implemented into my groups integrated CPT project as it was causing a lot errors. This has been moved up our priority list right under seperating our code files seperately! As I was completing the writeup I decided that I want to do my best to implement the concept of PUT and UPDATE methods into my questions so that a user can update its question, this is definetely something I look forward to researching and completeing.
+
+<img src="https://drishyamody.github.io/student2/images/getCRUD.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/postCRUD.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/putCRUD.png" height="500" width="600">  
 
 - In VSCode, show algorithmic conditions used to validate data on a POST condition.
-<img src="http://0.0.0.0:4200/student2/images/validityWriteups.png" height="400" width="1000">  
+These are two basic conditions I applied to ensure the validity of posts, specifically questions and replys. I applied the condition that any post whether it be question or reply must be at least 5 characters to ensure that they are of true substance. Also ensured that the user ID was more than 2 characters as it tends to be easily forgettable if it is short in my personal experience. 
+
+<img src="https://drishyamody.github.io/student2/images/validityWriteups.png" height="400" width="1000">  
 
 - In Postman, show URL request and Body requirements for GET, POST, and UPDATE methods.
 - In Postman, show the JSON response data for 200 success conditions on GET, POST, and UPDATE methods.
-<img src="http://0.0.0.0:4200/student2/images/postRequest.png" height="500" width="600">  
-<img src="http://0.0.0.0:4200/student2/images/getRequest.png" height="500" width="600">  
-<img src="http://0.0.0.0:4200/student2/images/putRequest.png" height="500" width="600">  
+
+POST: Sends a question or reply to a question, in this postman request I sent a question to the database as sample testing data. 
+
+GET: This postman request retreived all data from the database under posts. I have also coded the model to except keywords. This enables the user to search for keywords rather than a specific question. 
+
+PUT: In the URL I provided the id of the user I wanted to change information for, given this it changed UID 13 to the data I provided in the body
+
+<img src="https://drishyamody.github.io/student2/images/postRequest.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/getRequest.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/putRequest.png" height="500" width="600">  
 
 - In Postman, show the JSON response for error for 400 when missing body on a POST request.
-<img src="http://0.0.0.0:4200/student2/images/400error.png" height="500" width="800">  
+
+<img src="https://drishyamody.github.io/student2/images/400error.png" height="500" width="1000">  
 
 - In Postman, show the JSON response for error for 404 when providing an unknown user ID to a UPDATE request.
+Provided an ID of a supposed user that does not exist in the database. Provided this ID in the url. 
 
-<img src="http://0.0.0.0:4200/student2/images/404error.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/404error.png" height="500" width="1000">  
 
 
 Frontend
@@ -57,16 +81,16 @@ Blog JavaScript API fetch code and formatting code to display JSON.
 
 POST
 
-<img src="http://0.0.0.0:4200/student2/images/inspectelement1.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/inspectelement1.png" height="500" width="1000">  
 
 GET
 
-<img src="http://0.0.0.0:4200/student2/images/inspectelement2.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/inspectelement2.png" height="500" width="1000">  
 
 UPDATE
 
 - In the Chrome browser, show a demo (GET) of obtaining an Array of JSON objects that are formatted into the browsers screen.
-<img src="http://0.0.0.0:4200/student2/images/inspectelement3.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/inspectelement3.png" height="500" width="1000">  
 
 
 - In JavaScript code, describe fetch and method that obtained the Array of JSON objects.
@@ -127,11 +151,11 @@ function topicSearch() {
 
 FAILURE
 
-<img src="http://0.0.0.0:4200/student2/images/postFailure.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/postFailure.png" height="500" width="1000">  
 
 SUCCESS
 
-<img src="http://0.0.0.0:4200/student2/images/postSuccess.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/postSuccess.png" height="500" width="1000">  
 
 
 - In JavaScript code, show and describe code that handles success. Describe how code shows success to the user in the Chrome Browser screen.
