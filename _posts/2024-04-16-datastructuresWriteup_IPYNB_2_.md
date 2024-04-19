@@ -11,11 +11,11 @@ permalink: writeup
 - From VSCode using SQLite3 Editor, show your unique collection/table in database, display rows and columns in the table   of the SQLite database.
 This database consists of questions and responses in which I have categorized as "notes"
 
-<img src="https://drishyamody.github.io/student2/images/databaseCollabora.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/databaseCollabora.png" height="500" width="1000">  
 
 - From VSCode model, show your unique code that was created to initialize table and create test data.
 
-<img src="https://drishyamody.github.io/student2/images/modelCode.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/modelCode.png" height="500" width="1000">  
 
 
 Lists and Dictionaries
@@ -27,7 +27,7 @@ The data shown in the debugger terminal is data passed through a post request. I
 
 Keys are the purple values on the left hand side of the debugger terminal while its values are the orange text besides it representing the user input for a question in context.
 
-<img src="https://drishyamody.github.io/student2/images/vscodevariablething.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/vscodevariablething.png" height="500" width="1000">  
 
 
 
@@ -42,9 +42,9 @@ POST: I have applied the POST method in the asking questions and replying to que
 
 PUT: I have applied the PUT method in the user information aspect of my CPT. The user can change their DOB, UID, NAME. This has not yet been implemented into my groups integrated CPT project as it was causing a lot errors. This has been moved up our priority list right under seperating our code files seperately! As I was completing the writeup I decided that I want to do my best to implement the concept of PUT and UPDATE methods into my questions so that a user can update its question, this is definetely something I look forward to researching and completeing.
 
-<img src="https://drishyamody.github.io/student2/images/getCRUD.png" height="500" width="600">  
-<img src="https://drishyamody.github.io/student2/images/postCRUD.png" height="500" width="600">  
-<img src="https://drishyamody.github.io/student2/images/putCRUD.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/getCRUD.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/postCRUD.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/putCRUD.png" height="500" width="1000">  
 
 - In VSCode, show algorithmic conditions used to validate data on a POST condition.
 These are two basic conditions I applied to ensure the validity of posts, specifically questions and replys. I applied the condition that any post whether it be question or reply must be at least 5 characters to ensure that they are of true substance. Also ensured that the user ID was more than 2 characters as it tends to be easily forgettable if it is short in my personal experience. 
@@ -60,9 +60,9 @@ GET: This postman request retreived all data from the database under posts. I ha
 
 PUT: In the URL I provided the id of the user I wanted to change information for, given this it changed UID 13 to the data I provided in the body
 
-<img src="https://drishyamody.github.io/student2/images/postRequest.png" height="500" width="600">  
-<img src="https://drishyamody.github.io/student2/images/getRequest.png" height="500" width="600">  
-<img src="https://drishyamody.github.io/student2/images/putRequest.png" height="500" width="600">  
+<img src="https://drishyamody.github.io/student2/images/postRequest.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/getRequest.png" height="500" width="1000">  
+<img src="https://drishyamody.github.io/student2/images/putRequest.png" height="500" width="1000">  
 
 - In Postman, show the JSON response for error for 400 when missing body on a POST request.
 
@@ -88,13 +88,14 @@ GET
 <img src="https://drishyamody.github.io/student2/images/inspectelement2.png" height="500" width="1000">  
 
 UPDATE
+<img src="https://drishyamody.github.io/student2/images/lastPUT.png" height="500" width="1000">  
 
 - In the Chrome browser, show a demo (GET) of obtaining an Array of JSON objects that are formatted into the browsers screen.
 <img src="https://drishyamody.github.io/student2/images/inspectelement3.png" height="500" width="1000">  
 
 
 - In JavaScript code, describe fetch and method that obtained the Array of JSON objects.
-
+Called the function "topicSearch" as a convenient name for me to find when I feel like something needs to be edited in the GET and searching aspect. After declaring which method I wanted to use
 
 
 
@@ -159,6 +160,7 @@ SUCCESS
 
 
 - In JavaScript code, show and describe code that handles success. Describe how code shows success to the user in the Chrome Browser screen.
+In this scenario I thought it would be best to address this aspect of coding with a post request. As shown in the code segment below there is the "if (response.ok) which is an if statement that ensures the validitiy of the response and make sure it aligns with the expected output. If this condition is met of a valid response the user is alerted that their question has been received and they will receieve a response soon. We also log a fairly similar message in the console. 
 ```
    fetch("http://127.0.0.1:8086/api/post/", requestOptions)
         .then(response => {
@@ -170,10 +172,11 @@ SUCCESS
           )
 ```
 - In JavaScript code, show and describe code that handles failure. Describe how the code shows failure to the user in the Chrome Browser screen.
+This code again refers to the condition in the code segment above that says "if (response.ok)" if for some reason this condition is met the error message is displayed as Question creation failed to the user but the true reason behind the error can be viewed in the network tab of inspect element. I belive it might also be beneficial to add an alert that in detail describes why their error occurred, this is something I will definetely add in the future. 
 ```
 else {
                 console.error("Question creation failed");
-                // You can handle failed login attempts here
+                
                 const errorMessageDiv = document.getElementById('errorMessage');
                 errorMessageDiv.innerHTML = '<label style="color: red;">Question Creation Failed</label>';}
 ```
