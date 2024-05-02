@@ -31,23 +31,40 @@ Keys are the purple values on the left hand side of the debugger terminal while 
 
 
 
+
+
+
+
+
+
+Blog Python API code and use of List and Dictionaries.
+
+- In VSCode using Debugger, show a list as extracted from database as Python objects.
+- In VSCode use Debugger and list, show two distinct example examples of dictionaries, show Keys/Values using debugger.
+The data shown in the debugger terminal is data passed through a post request. IN this case simulating someone asking a question, this is a very similar concept for replying to a question. 
+
+Keys are the purple values on the left hand side of the debugger terminal while its values are the orange text besides it representing the user input for a question in context.
+
+<img src="https://drishyamody.github.io/student2/images/vscodevariablething.png" height="500" width="1000">  
+
+
+
 APIs and JSON
 Blog Python API code and use of Postman to request and respond with JSON.
 
 - In VSCode, show Python API code definition for request and response using GET, POST, UPDATE methods. Discuss algorithmic condition used to direct request to appropriate Python method based on request method.
 
-GET: I have applied the GET method in the research aspect of my feature. When a user searches for a question with a key word using the GET method and with query syntax to apply the condition of finding database data with the key word inputted by the user all questions with the users key word are displayed in a user acceptable form.
+GET: I have applied the GET method in the research aspect of my feature. When a user searches for a question with a key word using the GET method and with query syntax to apply the condition. 
 
-POST: I have applied the POST method in the asking questions and replying to questions aspect of my feature. When the user asks a question or replys to a question the POST method is called. This is something I want to work on as I have found that all replys and questions are stored in the same column on my database as shown above. I aim to find a way to differentiate the replys and questions to acheive the most organized data possible.
-
-PUT: I have applied the PUT method in the user information aspect of my CPT. The user can change their DOB, UID, NAME. This has not yet been implemented into my groups integrated CPT project as it was causing a lot errors. This has been moved up our priority list right under seperating our code files seperately! As I was completing the writeup I decided that I want to do my best to implement the concept of PUT and UPDATE methods into my questions so that a user can update its question, this is definetely something I look forward to researching and completeing.
+POST: I have applied the POST method in the asking questions and replying to questions aspect of my feature. When the user asks a question or replys to a question the POST method is called. 
+PUT: I have applied the PUT method in the user information aspect of my CPT. The user can change their DOB, UID, NAME. 
 
 <img src="https://drishyamody.github.io/student2/images/getCRUD.png" height="500" width="1000">  
 <img src="https://drishyamody.github.io/student2/images/postCRUD.png" height="500" width="1000">  
 <img src="https://drishyamody.github.io/student2/images/putCRUD.png" height="500" width="1000">  
 
 - In VSCode, show algorithmic conditions used to validate data on a POST condition.
-These are two basic conditions I applied to ensure the validity of posts, specifically questions and replys. I applied the condition that any post whether it be question or reply must be at least 5 characters to ensure that they are of true substance. Also ensured that the user ID was more than 2 characters as it tends to be easily forgettable if it is short in my personal experience. 
+These are two basic conditions I applied to ensure the validity of posts, specifically questions and replys. I applied the condition that any post whether it be question or reply must be at least 5 characters to ensure that they are of true substance. Also ensured that the user ID was more than 2 characters as it tends to be easily forgettable. 
 
 <img src="https://drishyamody.github.io/student2/images/validityWriteups.png" height="400" width="1000">  
 
@@ -160,7 +177,7 @@ SUCCESS
 
 
 - In JavaScript code, show and describe code that handles success. Describe how code shows success to the user in the Chrome Browser screen.
-In this scenario I thought it would be best to address this aspect of coding with a post request. As shown in the code segment below there is the "if (response.ok) which is an if statement that ensures the validitiy of the response and make sure it aligns with the expected output. If this condition is met of a valid response the user is alerted that their question has been received and they will receieve a response soon. We also log a fairly similar message in the console. 
+In this scenario I thought it would be best to address this aspect of coding with a post request. As shown in the code segment below there is the "if (response.ok) which is an if statement that ensures the validitiy of the response.
 ```
    fetch("http://127.0.0.1:8086/api/post/", requestOptions)
         .then(response => {
@@ -172,7 +189,7 @@ In this scenario I thought it would be best to address this aspect of coding wit
           )
 ```
 - In JavaScript code, show and describe code that handles failure. Describe how the code shows failure to the user in the Chrome Browser screen.
-This code again refers to the condition in the code segment above that says "if (response.ok)" if for some reason this condition is met the error message is displayed as Question creation failed to the user but the true reason behind the error can be viewed in the network tab of inspect element. I belive it might also be beneficial to add an alert that in detail describes why their error occurred, this is something I will definetely add in the future. 
+This code again refers to the condition in the code segment above that says "if (response.ok)" if for some reason this condition is met the error message is displayed as Question creation failed to the user but the true reason behind the error can be viewed in the network tab of inspect element. 
 ```
 else {
                 console.error("Question creation failed");
@@ -180,3 +197,25 @@ else {
                 const errorMessageDiv = document.getElementById('errorMessage');
                 errorMessageDiv.innerHTML = '<label style="color: red;">Question Creation Failed</label>';}
 ```
+
+After working on the personal machine learning projects I learnt the value of LINEAR REGRESSION and DECISION TREE algorithms
+
+Linear regression: This refers to something known as the line of best fit. Me taking AP statistics I have basic knowledge on its functionality but learning how to implement this in machine learning showed me a new perspective of its functionality. This isnt always the most accurate form of prediciotn as it always assumes a linear rleationship
+<img src="https://drishyamody.github.io/student2/images/linearRegression.png" height="500" width="1000">  
+
+Decision trees:  At each point where the tree splits into branches (these points are called nodes), a decision is made. This decision is usually a question or condition about the data. To build a decision tree, the system learns from past data. For me, It looks at historical stock patterns, for example, to determine the most effective predict stock patterns.
+<img src="https://drishyamody.github.io/student2/images/decisionTree.png" height="500" width="1000"> 
+
+### Deployment Lecture Notes 4/22/24
+
+- assets/js/config.js
+    If deployment URL and localhost backend url is in this it should be able to know whether to fetch from backend localhost or deployed backend
+
+- WORK WITH NGINX
+- Mr. Mortensen moved his CORS code from main.py to __init__.py
+- CORS code shows which URLs are allowed to access
+- @token_required should be guarding specific HTTP endpoints. (defined in authmiddleware.py)
+- Certbot is necessary to change from http to https
+- have guarded and ungaurded requests in project. look at the teeacher repositiory (/deployed_project_IPYNB_2_.html_)
+- handle errors in the backend
+- 
