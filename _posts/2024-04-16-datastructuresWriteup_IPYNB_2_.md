@@ -200,6 +200,16 @@ else {
 
 After working on the personal machine learning projects I learnt the value of LINEAR REGRESSION and DECISION TREE algorithms
 
+ Show algorithms and preparation of data for analysis. This includes cleaning, encoding, and one-hot encoding.
+ **SHOW JUPYTER NOTEBOOK**
+ <img src="https://drishyamody.github.io/student2/images/ML1.png" height="500" width="1000">  
+
+
+ Show algorithms and preparation for predictions.
+**SHOW JUPYTER NOTEBOOK**
+<img src="https://drishyamody.github.io/student2/images/ML2.png" height="500" width="1000">  
+
+
 Linear regression: This refers to something known as the line of best fit. Me taking AP statistics I have basic knowledge on its functionality but learning how to implement this in machine learning showed me a new perspective of its functionality. This isnt always the most accurate form of prediciotn as it always assumes a linear rleationship
 <img src="https://drishyamody.github.io/student2/images/linearRegression.png" height="500" width="1000">  
 
